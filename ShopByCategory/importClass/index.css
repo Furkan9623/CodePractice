@@ -1,0 +1,13 @@
+.navbar {
+  display: flex;
+  height: 60px;
+  background-color: black;
+  color: white;
+  justify-content: space-around;
+  align-items: center;
+}
+/* .right {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+} */

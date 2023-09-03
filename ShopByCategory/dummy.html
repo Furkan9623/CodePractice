@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #navbar {
+        height: 60px;
+        display: flex;
+        justify-content: space-around;
+        border: 2px solid teal;
+        align-items: center;
+        color: white;
+        background-color: black;
+      }
+      #query {
+        width: 500px;
+        padding: 5px 20px;
+      }
+
+      button {
+        padding: 5px 20px;
+        background-color: black;
+        color: white;
+        font-size: 15px;
+      }
+      #sorting {
+        background-color: aqua;
+        display: flex;
+        justify-content: space-around;
+        height: 50px;
+        align-items: center;
+        margin: auto;
+      }
+      #hotels_list {
+        display: flex;
+        flex-wrap: wrap;
+
+        text-align: center;
+        gap: 10px;
+      }
+      #hotel {
+        display: block;
+      }
+
+      #imgTag {
+        width: 300px;
+        height: 300px;
+        display: block;
+        margin: auto;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navbar">
+      <div>
+        <h2>Hotel App</h2>
+      </div>
+      <div class="middle">
+        <input type="text" id="query" />
+        <button id="search" onclick="search()">Search</button>
+      </div>
+      <div class="right">
+        <button id="signup"><a href="signup.html">Sing-Up</a></button>
+        <button id="login"><a href="login.html">LogIn</a></button>
+      </div>
+      <!-- the search-box id:- "query"
+ - the log-in and sign-up link will have ids:- "login" and "signup" -->
+    </div>
+    <div id="sorting">
+      <button id="sort-lth">Price Low to High</button>
+      <button id="sort_htl">Price High to Low</button>
+      <button id="filter_ac">ac</button>
+      <button id="filter_nonac">Non-Ac</button>
+
+      <!-- sort by price low to high Id:- "sort_lth"
+ - sort by price high to low Id:- "sort_htl"
+ - Filter Ac hotels Id:- "filter_ac"
+ - Filter Non Ac hotels Id:- "filter_nonac" -->
+    </div>
+    <div id="hotels_list">
+    
+      <!-- - Append all fetched hotels inside div with id:- "hotels_list"
+ - Every hotel card will have id:-  "hotel"
+ - The book now button will have class as "book" -->
+    </div>
+  </body>
+</html>
+<script src="dummy.js"></script>
